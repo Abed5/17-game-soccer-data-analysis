@@ -118,7 +118,7 @@ if __name__ == "__main__":
     correctPredictionCount = [correct_prediction_count(i) for i in outcomeVsPrediction]
     #print(correctPredictionCount[0])
     myDict = countconf(correctPredictionCount)
-    #print(myDict)
+    print(myDict)
 
     #Plotting number of correct predictions per jackpot
     xx = [item[0] for item in myDict.items()]
