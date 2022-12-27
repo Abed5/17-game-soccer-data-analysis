@@ -96,6 +96,13 @@ def unique_items(list):
 def get_first_item(element):
     return element[0]
 
+def standard_deviation(list):
+    mean = sum(list)/len(list)
+    squared_differences_from_mean = [(i - mean)**2 for i in list]
+    variance = sum(squared_differences_from_mean)/len(list)
+    standarddeviation = variance**0.5
+    return standarddeviation
+
 if __name__ == "__main__":
     #import statements
     import shelve
@@ -132,6 +139,11 @@ if __name__ == "__main__":
     plt.ylabel("Count of jackpots")
 
     plt.show()
+
+    #Standard deviation of correct predictions
+    std_deviation = standard_deviation(correctPredictionCount)
+    print('Standard Deviation of correct predictions is :' + "{:.2f}".format(std_deviation))
+
 
     #Basic Statistics
     outcomeListofLists = [i[0] for i in outcomeVsPrediction]
