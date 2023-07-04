@@ -5,8 +5,8 @@ Data used: https://soccerplatform.me
 
 <img width="621" alt="Screen Shot 2022-12-16 at 1 38 03 AM" src="https://user-images.githubusercontent.com/33075176/207982058-0a86038a-5814-435b-8279-d6dd4da2180f.png">
 
-The sum of correct predictions over time seem to follow the Central Limit Theorem. 
-In probability theory, the central limit theorem establishes that, in many situations, when independent random variables are summed up, their properly normalized sum tends toward a normal distribution even if the original variables themselves are not normally distributed. https://en.wikipedia.org/wiki/Central_limit_theorem
+The sum of correct predictions over time follows the Central Limit Theorem. 
+Here is a simplified version of https://en.wikipedia.org/wiki/Central_limit_theorem. In probability theory, the central limit theorem establishes that, in many situations, when independent random variables are summed up, their properly normalized sum tends toward a normal distribution even if the original variables themselves are not normally distributed.
 
 ###### Number of correct predictions : Number of jackpots
 {0: 0, 1: 0, 2: 0, 3: 1, 4: 6, 5: 13, 6: 14, 7: 37, 8: 34, 9: 27, 10: 22, 11: 19, 12: 8, 13: 3, 14: 2, 15: 0, 16: 0, 17: 0}
@@ -39,3 +39,4 @@ Count of ratios of 1:2:X
 [5, [4, 8, 5]]...
 
 Most common ratio [6, 6, 5]. Appeared 11 times.
+The interesting part of this summary is the similarity of the global ratio and count of ratios 1:2:X. It is 6:6:5
