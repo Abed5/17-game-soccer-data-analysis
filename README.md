@@ -23,7 +23,7 @@ Total number of outcome 2: 1110 35.1% 5.9/17
 Total number of outcome X: 917 29.0% 4.9/17
 
 
-Count of ratios of 1:2:X
+Frequency of ratios of 1:2:X
 [11, [6, 6, 5]]
 [9, [7, 5, 5]]
 [9, [8, 5, 4]]
@@ -38,5 +38,5 @@ Count of ratios of 1:2:X
 [5, [6, 8, 3]]
 [5, [4, 8, 5]]...
 
-Most common ratio [6, 6, 5]. Appeared 11 times.
-The interesting part of this summary is the similarity of the global ratio and count of ratios 1:2:X. It is 6:6:5
+
+The interesting part of this summary is the similarity of the overal ratio and the mode of frequency of ratios 1:2:X.
