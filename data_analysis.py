@@ -50,27 +50,8 @@ def correct_prediction_count(outcome_prediction):
     return count
 
 def countconf(xs):
-    mydict = {}
-    mydict[0] = xs.count(0)
-    mydict[1] = xs.count(1)
-    mydict[2] = xs.count(2)
-    mydict[3] = xs.count(3)
-    mydict[4] = xs.count(4)
-    mydict[5] = xs.count(5)
-    mydict[6] = xs.count(6)
-    mydict[7] = xs.count(7)
-    mydict[8] = xs.count(8)
-    mydict[9] = xs.count(9)
-    mydict[10] = xs.count(10)
-    mydict[11] = xs.count(11)
-    mydict[12] = xs.count(12)
-    mydict[13] = xs.count(13)
-    mydict[14] = xs.count(14)
-    mydict[15] = xs.count(15)
-    mydict[16] = xs.count(16)
-    mydict[17] = xs.count(17)
+    return {i:xs.count(i) for i in range(min(xs)-1,max(xs)+1)}
 
-    return mydict
 
 def list_of_lists_into_List(list_of_lists):
     big_list = []
