@@ -22,6 +22,7 @@ Total number of outcome 2: 1110 35.1% 5.9/17
 
 Total number of outcome X: 917 29.0% 4.9/17
 
+Standard Deviation: 2.17
 
 Frequency of ratios of 1:2:X
 [11, [6, 6, 5]]
