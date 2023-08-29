@@ -37,5 +37,5 @@ Frequency of ratios of 1:2:X
 5, 4:8:5 ...
 
 
-## Analyzing Ratios in Soccer Match Outcomes
-One noteworthy aspect highlighted in this summary is the intriguing resemblance between the overall ratio and the modal frequency of the 1:2:X ratios.
+## Note
+The overall ratio and modal frequency of the 1:2:X ratios
