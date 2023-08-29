@@ -3,13 +3,10 @@
 ## Summary statistics on past 186 outcomes.
 Data used: soccerplatform.me
 
-<img width="621" alt="Screen Shot 2022-12-16 at 1 38 03 AM" src="https://user-images.githubusercontent.com/33075176/207982058-0a86038a-5814-435b-8279-d6dd4da2180f.png">
-
-The sum of correct predictions over time follows the Central Limit Theorem. 
-In probability theory, the central limit theorem establishes that, in many situations, when independent random variables are summed up, their properly normalized sum tends toward a normal distribution even if the original variables themselves are not normally distributed.
+The sum of correct predictions over time follows the CLT. 
 
 ###### Number of correct predictions : Number of 17-game pool outcomes
-{0: 0, 1: 0, 2: 0, 3: 1, 4: 6, 5: 13, 6: 14, 7: 37, 8: 34, 9: 27, 10: 22, 11: 19, 12: 8, 13: 3, 14: 2, 15: 0, 16: 0, 17: 0}
+0: 0, 1: 0, 2: 0, 3: 1, 4: 6, 5: 13, 6: 14, 7: 37, 8: 34, 9: 27, 10: 22, 11: 19, 12: 8, 13: 3, 14: 2, 15: 0, 16: 0, 17: 0
 
 ## Summaries
 Total number of 17-game outcomes: 186
