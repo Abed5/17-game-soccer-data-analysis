@@ -49,7 +49,7 @@ def correct_prediction_count(outcome_prediction):
             count+=1
     return count
 
-def countconf(xs):
+def get_frequencies(xs):
     return {i:xs.count(i) for i in range(min(xs)-1,max(xs)+1)}
 
 
@@ -105,7 +105,7 @@ if __name__ == "__main__":
     #print(outcomeVsPrediction[50])
     correctPredictionCount = [correct_prediction_count(i) for i in outcomeVsPrediction]
     #print(correctPredictionCount[0])
-    myDict = countconf(correctPredictionCount)
+    myDict = get_frequencies(correctPredictionCount)
     print(myDict)
 
     #Plotting number of correct predictions per jackpot
