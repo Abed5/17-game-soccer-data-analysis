@@ -115,9 +115,9 @@ if __name__ == "__main__":
     yaxis = np.array(yy)
 
     plt.plot(xaxis,yaxis)
-    plt.title("Soccerplatform Megajackpot Prediction Plot")
+    plt.title("Soccerplatform Prediction Plot")
     plt.xlabel("Number of games predicted correctly out of 17")
-    plt.ylabel("Count of jackpots")
+    plt.ylabel("Frequency of pools")
 
     plt.show()
 
