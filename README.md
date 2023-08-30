@@ -37,5 +37,5 @@ Frequency of ratios of 1:2:X
 5, 4:8:5 ...
 
 
-## Note
+### Note
 The overall ratio and modal frequency of the 1:2:X ratios
