@@ -1,20 +1,17 @@
-# megajackpot-data-analysis
+# Analysis of 17-Game Soccer Pool Outcomes
 
-## Summary statistics on past 186 https://sportpesa.com megajackpot bets.
-Data used: https://soccerplatform.me
+## Summary statistics on past 186 outcomes.
+Data used: soccerplatform.me
 
-<img width="621" alt="Screen Shot 2022-12-16 at 1 38 03 AM" src="https://user-images.githubusercontent.com/33075176/207982058-0a86038a-5814-435b-8279-d6dd4da2180f.png">
+The sum of correct predictions over time follows the CLT. 
 
-The sum of correct predictions over time follows the Central Limit Theorem. 
-Here is a simplified version of https://en.wikipedia.org/wiki/Central_limit_theorem. In probability theory, the central limit theorem establishes that, in many situations, when independent random variables are summed up, their properly normalized sum tends toward a normal distribution even if the original variables themselves are not normally distributed.
-
-###### Number of correct predictions : Number of jackpots
-{0: 0, 1: 0, 2: 0, 3: 1, 4: 6, 5: 13, 6: 14, 7: 37, 8: 34, 9: 27, 10: 22, 11: 19, 12: 8, 13: 3, 14: 2, 15: 0, 16: 0, 17: 0}
+###### Number of correct predictions : Number of 17-game pool outcomes
+0: 0, 1: 0, 2: 0, 3: 1, 4: 6, 5: 13, 6: 14, 7: 37, 8: 34, 9: 27, 10: 22, 11: 19, 12: 8, 13: 3, 14: 2, 15: 0, 16: 0, 17: 0
 
 ## Summaries
-Total number of jackpots: 186
+Total number of 17-game outcomes: 186
 
-Total number of games: 3162
+Total number of individual games: 3162
 
 Total number of outcome 1: 1135 35.9% 6.1/17
 
@@ -22,21 +19,23 @@ Total number of outcome 2: 1110 35.1% 5.9/17
 
 Total number of outcome X: 917 29.0% 4.9/17
 
+Standard Deviation: 2.17
 
-Count of ratios of 1:2:X
-[11, [6, 6, 5]]
-[9, [7, 5, 5]]
-[9, [8, 5, 4]]
-[9, [7, 6, 4]]
-[8, [5, 5, 7]]
-[8, [6, 5, 6]]
-[8, [7, 4, 6]]
-[7, [7, 7, 3]]
-[7, [5, 7, 5]]
-[7, [5, 6, 6]]
-[5, [8, 4, 5]]
-[5, [6, 8, 3]]
-[5, [4, 8, 5]]...
+Frequency of ratios of 1:2:X
+11, 6:6:5
+9, 7:5:5
+9, 8:5:4
+9, 7:6:4
+8, 5:5:7
+8, 6:5:6
+8, 7:4:6
+7, 7:7:3
+7, 5:7:5
+7, 5:6:6
+5, 8:4:5
+5, 6:8:3
+5, 4:8:5 ...
 
-Most common ratio [6, 6, 5]. Appeared 11 times.
-The interesting part of this summary is the similarity of the global ratio and count of ratios 1:2:X. It is 6:6:5
+
+### Note
+The overall ratio and modal frequency of the 1:2:X ratios

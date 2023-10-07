@@ -49,28 +49,9 @@ def correct_prediction_count(outcome_prediction):
             count+=1
     return count
 
-def countconf(xs):
-    mydict = {}
-    mydict[0] = xs.count(0)
-    mydict[1] = xs.count(1)
-    mydict[2] = xs.count(2)
-    mydict[3] = xs.count(3)
-    mydict[4] = xs.count(4)
-    mydict[5] = xs.count(5)
-    mydict[6] = xs.count(6)
-    mydict[7] = xs.count(7)
-    mydict[8] = xs.count(8)
-    mydict[9] = xs.count(9)
-    mydict[10] = xs.count(10)
-    mydict[11] = xs.count(11)
-    mydict[12] = xs.count(12)
-    mydict[13] = xs.count(13)
-    mydict[14] = xs.count(14)
-    mydict[15] = xs.count(15)
-    mydict[16] = xs.count(16)
-    mydict[17] = xs.count(17)
+def get_frequencies(xs):
+    return {i:xs.count(i) for i in range(min(xs)-1,max(xs)+1)}
 
-    return mydict
 
 def list_of_lists_into_List(list_of_lists):
     big_list = []
@@ -96,6 +77,13 @@ def unique_items(list):
 def get_first_item(element):
     return element[0]
 
+def standard_deviation(list):
+    mean = sum(list)/len(list)
+    squared_differences_from_mean = [(i - mean)**2 for i in list]
+    variance = sum(squared_differences_from_mean)/len(list)
+    standarddeviation = variance**0.5
+    return standarddeviation
+
 if __name__ == "__main__":
     #import statements
     import shelve
@@ -117,7 +105,7 @@ if __name__ == "__main__":
     #print(outcomeVsPrediction[50])
     correctPredictionCount = [correct_prediction_count(i) for i in outcomeVsPrediction]
     #print(correctPredictionCount[0])
-    myDict = countconf(correctPredictionCount)
+    myDict = get_frequencies(correctPredictionCount)
     print(myDict)
 
     #Plotting number of correct predictions per jackpot
@@ -127,11 +115,16 @@ if __name__ == "__main__":
     yaxis = np.array(yy)
 
     plt.plot(xaxis,yaxis)
-    plt.title("Soccerplatform Megajackpot Prediction Plot")
+    plt.title("Soccerplatform Prediction Plot")
     plt.xlabel("Number of games predicted correctly out of 17")
-    plt.ylabel("Count of jackpots")
+    plt.ylabel("Frequency of pools")
 
     plt.show()
+
+    #Standard deviation of correct predictions
+    std_deviation = standard_deviation(correctPredictionCount)
+    print('Standard Deviation of correct predictions is :' + "{:.2f}".format(std_deviation))
+
 
     #Basic Statistics
     outcomeListofLists = [i[0] for i in outcomeVsPrediction]
