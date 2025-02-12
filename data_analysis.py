@@ -1,4 +1,5 @@
 import re
+from scipy import stats
 def jackpot_games_results_from_datum(datum):
     resultsRegex = re.compile(r'\d-\d')
     for i in range(len(datum[0])):
@@ -119,7 +120,7 @@ if __name__ == "__main__":
     plt.xlabel("Number of games predicted correctly out of 17")
     plt.ylabel("Frequency of pools")
 
-    plt.show()
+    #plt.show()
 
     #Standard deviation of correct predictions
     std_deviation = standard_deviation(correctPredictionCount)
@@ -153,5 +154,28 @@ if __name__ == "__main__":
     n = [i[0] for i in m]
     p = sorted(m, key = get_first_item, reverse=True)
     print('Count of ratios of 1:2:X')
-    [print(i) for i in p]
+    # printing sorted list of ratio 1:2:X
+    #[print(i) for i in p]
     
+    print(outcomeListofLists[0])
+
+    print("summary statistics on outcome 1")
+    count_of_1 = [count_instances_of(i, '1') for i in outcomeListofLists]
+    print("mean: " + "{:.2f}".format(sum(count_of_1)/len(count_of_1)))
+    print("median: " + "{:.1f}".format((count_of_1[int(len(count_of_1)/2)] + 
+                                        count_of_1[int(len(count_of_1)/2)+1])/2))
+    print("mode: " + str(list(stats.mode(count_of_1).mode)[0]))
+
+    print("summary statistics on outcome 2")
+    count_of_2 = [count_instances_of(i, '2') for i in outcomeListofLists]
+    print("mean: " + "{:.2f}".format(sum(count_of_2)/len(count_of_2)))
+    print("median: " + "{:.1f}".format((count_of_2[int(len(count_of_2)/2)] + 
+                                        count_of_2[int(len(count_of_2)/2)+1])/2))
+    print("mode: " + str(list(stats.mode(count_of_2).mode)[0]))
+
+    print("summary statistics on outcome X")
+    count_of_X = [count_instances_of(i, 'X') for i in outcomeListofLists]
+    print("mean: " + "{:.2f}".format(sum(count_of_X)/len(count_of_X)))
+    print("median: " + "{:.1f}".format((count_of_X[int(len(count_of_X)/2)] + 
+                                        count_of_X[int(len(count_of_X)/2)+1])/2))
+    print("mode: " + str(list(stats.mode(count_of_X).mode)[0]))
